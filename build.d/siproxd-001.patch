@@ -1,0 +1,14 @@
+diff -rupN siproxd-0.8.2.orig/src/resolve.c siproxd-0.8.2/src/resolve.c
+--- siproxd-0.8.2.orig/src/resolve.c	2016-11-22 17:19:23.000000000 +0100
++++ siproxd-0.8.2/src/resolve.c	2016-11-22 17:30:58.000000000 +0100
+@@ -22,7 +22,9 @@
+ 
+ #include <arpa/inet.h>
+ #include <netinet/in.h>
+-
++#include <stdio.h>
++#include <stdint.h>
++#include <sys/types.h>
+ #include <arpa/nameser.h>
+ #ifdef __APPLE__
+ #include <arpa/nameser_compat.h>

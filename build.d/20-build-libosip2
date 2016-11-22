@@ -1,0 +1,18 @@
+#!/bin/sh
+
+VERSION=5.0.0
+URL="http://www.antisip.com/download/exosip2/libosip2-$VERSION.tar.gz"
+DIR="libosip2-$VERSION"
+
+cd /usr/src
+
+curl -SL "$URL" | tar xzf -
+
+cd "$DIR"
+
+./configure --prefix=/usr
+make 
+make install
+
+cd /usr/src
+rm -rf "/usr/src/$DIR"

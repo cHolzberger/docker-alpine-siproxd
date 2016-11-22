@@ -1,0 +1,11 @@
+build-base
+tar
+grep
+gzip
+bzip2
+sed
+file
+wget
+git
+m4
+bash

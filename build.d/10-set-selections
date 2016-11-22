@@ -1,0 +1,4 @@
+#!/bin/sh
+
+set-selections dev
+apk-apply
