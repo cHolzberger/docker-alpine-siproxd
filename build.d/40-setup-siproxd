@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mkdir /var/lib/siproxd
+touch /var/lib/siproxd/siproxd_registrations
